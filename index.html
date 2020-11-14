@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> clock </title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="index.py">  </script>
+    </head>
+    <body>
+        <p> <h1> <center id="t">digital Clock by Redoan </center> </h1> </p>
+        <div id="clock"></div>
+        <script>  
+        setInterval(displaytime,1000);
+        function displaytime()
+        {
+            var time=new Date();
+            var h=time.getHours();
+            var m=time.getMinutes();
+            var s=time.getSeconds();
+            if(h>12)
+            {
+                h=h-12;
+            }
+            if(h==12)
+            {
+                h=0;
+            }
+            
+            
+            document.getElementById("clock").innerHTML=h+":"+m+":"+s;
+        }
+        
+        displaytime()
+        
+        
+        </script>
+        
+    </body> 
+</html>

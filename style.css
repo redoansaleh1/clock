@@ -1,0 +1,16 @@
+ div{ 
+   
+   margin:100px 100px 100px 100px;
+   margin-top:300px; 
+   padding:10px 10px 10px 10px;
+   font-size:150px;
+   text-align:center;
+   background:url(clock.jpg);
+ }
+html { 
+    background:yellow;
+}
+#t{
+    font-size:120px;
+    color:blue;
+}
